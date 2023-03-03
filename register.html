@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+        <title>Register</title>
+        </head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #3B3B3B;
+    }
+    
+    #main {
+      background-color: #F8F8F8;
+      padding: 50px 0;
+    }
+    
+    #form-container {
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    label {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      color: #3B3B3B;
+      font-weight: bold;
+    }
+    
+    input {
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    button {
+      background-color: #5C5CE5;
+      border: none;
+      color: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #4444CC;
+      cursor: pointer;
+    }
+    
+    #message {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #3B3B3B;
+    }
+  </style>
+        <body>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <div id="main">
+    
+    <div id="name">
+    
+    <hr/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+    <div class="container">
+      <h1>REGISTRATION</h1>
+      <div id="form-container">
+    <Form id ="form1" Method ="POST" ACTION = "php/register.php">
+<div class="form-group">
+  <label for="username">Username:</label>
+      <input id="username" class="form-control" /></div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+             <input type="password" id="password" class="form-control" /></div>
+             <div class="form-group">
+              <label for="contact">Contact:</label>
+                  <input type="number" id="contact" class="form-control" /></div>
+                  <div class="form-group">
+                    <label for="dob">DOB:</label>
+                        <input type="date" id="dob" class="form-control" /></div>
+                        <div class="form-group">
+                          <label for="age">Age:</label>
+                              <input type="number" id="age" class="form-control" /></div>
+                              <div class="form-group">
+                                <label for="domain">Domain:</label>
+                                    <input id="domain" class="form-control" /></div>
+      <button id="submit" class="btn btn-primary">Submit</button><br>
+    </div>
+      <div id="message"></div>
+
+      </form>
+    </div>
+     </div>    
+    </div>   
+   </div>   
+  </body>
+</html>
